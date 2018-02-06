@@ -5,8 +5,7 @@ import {
   Switch
 } from 'react-router-dom'
 
-import {HomeScreen} from './HomeScreen'
-import {LoginScreen} from './LoginScreen'
+import * as Screens from './screens'
 
 export class App extends Component {
   render() {
@@ -14,11 +13,13 @@ export class App extends Component {
       <div>
         <ul>
           <li><Link to='/'>Home</Link></li>
+          <li><Link to='/about'>About</Link></li>
           <li><Link to='/login'>Login</Link></li>
         </ul>
         <Switch>
-          <Route exact path='/' component={HomeScreen} />
-          <Route path='/login' component={LoginScreen} />
+          <Route exact path='/' component={Screens.Home} />
+          <Route path='/about' component={Screens.About} />
+          <Route path='/login' component={Screens.Login} />
         </Switch>
       </div>
     )

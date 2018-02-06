@@ -14,9 +14,17 @@
     "test-electron"
   ],
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.7",
+    "apollo-client": "^2.2.2",
+    "apollo-link-http": "^1.3.2",
+    "apollo-utilities": "^1.0.6",
+    "graphql": "^0.12.3",
+    "graphql-tag": "^2.7.0",
     "react": "^16.2.0",
+    "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
+    "recompose": "^0.26.0",
     "source-map-support": "^0.5.3"
   },
   "devDependencies": {
@@ -36,6 +44,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4",
     "pre-commit": "^1.2.2",
+    "prop-types": "^15.6.0",
     "react-test-renderer": "^16.2.0",
     "webpack": "^3.10.0"
   }

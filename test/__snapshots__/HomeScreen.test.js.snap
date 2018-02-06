@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen Component handles loading state 1`] = `
+<p>
+  Loading...
+</p>
+`;
+
+exports[`HomeScreen Component returns markup 1`] = `
+<div>
+  <h1>
+    Electron App - Test page
+  </h1>
+  <ul>
+    <li>
+      Test Item 1
+    </li>
+    <li>
+      Test Item 2
+    </li>
+  </ul>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <p>
+      Counter: 
+      3
+    </p>
+    <div
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <button>
+        Inc
+      </button>
+      <button>
+        Dec
+      </button>
+    </div>
+  </div>
+  <pre>
+    Path: 
+    /
+  </pre>
+</div>
+`;
+
+exports[`HomeScreen Component returns markup when no items 1`] = `
+<div>
+  <h1>
+    Electron App - Test page
+  </h1>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <p>
+      Counter: 
+      3
+    </p>
+    <div
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <button>
+        Inc
+      </button>
+      <button>
+        Dec
+      </button>
+    </div>
+  </div>
+  <pre>
+    Path: 
+    /
+  </pre>
+</div>
+`;
+
+exports[`HomeScreen has a known query shape 1`] = `
+"{
+  home {
+    path
+    title
+    items
+    counter
+  }
+}
+"
+`;
