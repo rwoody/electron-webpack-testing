@@ -6,15 +6,36 @@
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
     "dist": "yarn compile && electron-builder",
-    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+    "test": "jest",
+    "test-electron": "ELECTRON_RUN_AS_NODE=true ./node_modules/.bin/electron ./node_modules/.bin/jest --forceExit"
   },
+  "pre-commit": [
+    "test-electron"
+  ],
   "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "source-map-support": "^0.5.3"
   },
   "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-dynamic-import-webpack": "^1.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-0": "^6.24.1",
     "electron": "1.7.12",
     "electron-builder": "^19.55.3",
     "electron-webpack": "1.12.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.1.4",
+    "pre-commit": "^1.2.2",
+    "react-test-renderer": "^16.2.0",
     "webpack": "^3.10.0"
   }
 }
